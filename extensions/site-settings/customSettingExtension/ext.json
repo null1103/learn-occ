@@ -1,0 +1,19 @@
+{
+  "extensionID": "19e4508f-bea1-454a-9e80-bff127acd771",
+  "developerID": "1",
+  "createdBy": "Company Name",
+  "version": 1,
+  "timeCreated": "2024-11-06",
+  "translations": [
+    {
+      "language": "en",
+      "name": "Custom Site Setting Extension",
+      "description": "This is the extension for custom site settings example"
+    },
+    {
+      "language": "fr_CA",
+      "name": "Extension de paramètre de site personnalisé",
+      "description": "Il s'agit de l'exemple d'extension pour les paramètres de site personnalisés"
+    }
+  ]
+}

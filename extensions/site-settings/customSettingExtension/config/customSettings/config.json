@@ -1,0 +1,148 @@
+{
+  "titleResourceId": "title",
+  "descriptionResourceId": "description",
+  "enableSiteSpecific": true,
+  "properties": [
+    {
+      "id": "enableCartMessage",
+      "type": "booleanType",
+      "name": "enableCartMessage",
+      "helpTextResourceId": "enableCartMessageHelpText",
+      "labelResourceId": "enableCartMessageLabel",
+      "defaultValue": true
+    },
+    {
+      "id": "coupon",
+      "type": "stringType",
+      "name": "coupon",
+      "helpTextResourceId": "couponHelpText",
+      "labelResourceId": "couponLabel",
+      "defaultValue": "SHIP100",
+      "minLength": 6,
+      "maxLength": 10,
+      "required": true,
+      "public": false
+    },
+    {
+      "id": "minSpend",
+      "type": "stringType",
+      "name": "minSpend",
+      "helpTextResourceId": "minSpendHelpText",
+      "labelResourceId": "minSpendLabel",
+      "defaultValue": "100",
+      "required": true,
+      "pattern": "^[1-9][0-9]?$|^100$"
+    },
+    {
+      "id": "password",
+      "type": "passwordType",
+      "name": "password",
+      "helpTextResourceId": "passwordHelpText",
+      "labelResourceId": "passwordLabel",
+      "required": true
+    },
+    {
+      "id": "bannerImage",
+      "type": "mediaType",
+      "name": "bannerImageUrl",
+      "helpTextResourceId": "bannerImageHelpText",
+      "labelResourceId": "bannerImageLabel"
+    },
+    {
+      "id": "bannerSize",
+      "type": "optionType",
+      "name": "bannerSize",
+      "helpTextResourceId": "sizeHelpText",
+      "labelResourceId": "sizeLabel",
+      "defaultValue": "s",
+      "options": [
+        {
+          "id": "sizeSmall",
+          "value": "s",
+          "labelResourceId": "sizeSmallLabel"
+        },
+        {
+          "id": "sizeMedium",
+          "value": "m",
+          "labelResourceId": "sizeMediumLabel"
+        },
+        {
+          "id": "sizeLarge",
+          "value": "l",
+          "labelResourceId": "sizeLargeLabel"
+        }
+      ]
+    },
+    {
+      "id": "collectionItem",
+      "type": "collectionType",
+      "name": "collectionPickerValue",
+      "helpTextResourceId": "collectionPickerValueHelpText",
+      "labelResourceId": "collectionPickerValueLabel",
+      "maxLength": 5
+    },
+    {
+      "id": "paymentTitle",
+      "type": "sectionTitleType",
+      "helpTextResourceId": "paymentTitleHelpText",
+      "labelResourceId": "paymentTitleLabel"
+    },
+    {
+      "id": "paymentMethods",
+      "type": "multiSelectOptionType",
+      "name": "paymentMethodsSupported",
+      "required": true,
+      "helpTextResourceId": "paymentMethodsHelpText",
+      "labelResourceId": "paymentMethodsLabel",
+      "defaultValue": "invoice",
+      "displayAsCheckboxes": true,
+      "options": [
+        {
+          "id": "paymentInvoice",
+          "value": "invoice",
+          "labelResourceId": "paymentInvoiceLabel"
+        },
+        {
+          "id": "paymentCard",
+          "value": "creditCard",
+          "labelResourceId": "paymentCardLabel"
+        },
+        {
+          "id": "paymentBank",
+          "value": "bankTransfer",
+          "labelResourceId": "paymentBankLabel"
+        }
+      ]
+    },
+    {
+      "id": "creditCards",
+      "type": "multiSelectOptionType",
+      "name": "creditCardsSupported",
+      "helpTextResourceId": "creditCardsHelpText",
+      "labelResourceId": "creditCardsLabel",
+      "defaultValue": "visa",
+      "options": [
+        {
+          "id": "visa",
+          "value": "visa",
+          "labelResourceId": "visaLabel"
+        },
+        {
+          "id": "amex",
+          "value": "amex",
+          "labelResourceId": "amexLabel"
+        },
+        {
+          "id": "mastercard",
+          "value": "mastercard",
+          "labelResourceId": "mastercardLabel"
+        },
+        {
+          "id": "discover",
+          "value": "discover",
+          "labelResourceId": "discoverLabel"
+        }
+      ]
+    }
+  ]
+}
