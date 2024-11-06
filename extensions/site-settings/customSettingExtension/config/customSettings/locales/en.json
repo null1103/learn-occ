@@ -1,7 +1,7 @@
 {
-  "resources" : {
+  "resources": {
     "title": "Custom Settings",
-    "description":"Examples of site settings.",
+    "description": "Examples of site settings.",
     "enableCartMessageHelpText": "Enable the cart message.",
     "enableCartMessageLabel": "Cart Message",
     "couponHelpText": "Define the coupon name.",
@@ -33,4 +33,4 @@
     "mastercardLabel": "Mastercard",
     "discoverLabel": "Discover"
   }
- }
+}
